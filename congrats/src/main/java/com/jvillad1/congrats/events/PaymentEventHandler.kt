@@ -1,26 +1,21 @@
 package com.jvillad1.congrats.events
 
-import android.util.Log
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
-class PaymentEventHandler {
+object PaymentEventHandler {
 
-    suspend fun postPaymentEvent(paymentEvent: PaymentEvent) {
-        EventBus.publish(paymentEvent)
+    fun publishPaymentEvent(lifecycleOwner: LifecycleOwner, paymentEvent: PaymentEvent) {
+        lifecycleOwner.lifecycleScope.launch {
+            EventBus.publish(paymentEvent)
+        }
     }
 
-    fun subscribePaymentEvent(lifecycleOwner: LifecycleOwner) {
+    fun subscribePaymentEvent(lifecycleOwner: LifecycleOwner, onEvent: (PaymentEvent) -> Unit) {
         lifecycleOwner.lifecycleScope.launch {
             EventBus.subscribe<PaymentEvent> { paymentEvent ->
-                when (paymentEvent) {
-                    is PerformPaymentEvent ->
-                        Log.d("PaymentEventHandler", "${paymentEvent.paymentData} PerformPaymentEvent")
-
-                    is PaymentResultEvent ->
-                        Log.d("PaymentEventHandler", "${paymentEvent.paymentResultData} PaymentResultEvent")
-                }
+                onEvent(paymentEvent)
             }
         }
     }
