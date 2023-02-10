@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.jvillad1.congrats.MainActivity2"
+            android:exported="false" />
+
+    </application>
 
 </manifest>
