@@ -18,7 +18,7 @@ import com.jvillad1.congrats.events.PaymentResultEvent
 import com.jvillad1.congrats.events.PerformPaymentEvent
 import com.jvillad1.congrats.ui.theme.CongratsTheme
 
-class MainActivity2 : ComponentActivity() {
+class CongratsActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,7 @@ class MainActivity2 : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    PaymentEventScreen(
+                    RemediesScreen(
                         onPerformPaymentEvent = {
                             PaymentEventHandler.publishPaymentEvent(
                                 this,
@@ -50,7 +50,7 @@ class MainActivity2 : ComponentActivity() {
 }
 
 @Composable
-fun PaymentEventScreen(
+fun RemediesScreen(
     onPerformPaymentEvent: () -> Unit = {},
     onPaymentResultEvent: () -> Unit = {}
 ) {
@@ -76,6 +76,6 @@ fun PaymentEventScreen(
 @Composable
 fun GreetingPreview() {
     CongratsTheme {
-        PaymentEventScreen()
+        RemediesScreen()
     }
 }

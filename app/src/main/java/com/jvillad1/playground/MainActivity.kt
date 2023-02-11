@@ -16,7 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import com.jvillad1.congrats.MainActivity2
+import com.jvillad1.congrats.CongratsActivity
 import com.jvillad1.congrats.events.PaymentEventHandler
 import com.jvillad1.congrats.events.PaymentResultEvent
 import com.jvillad1.congrats.events.PerformPaymentEvent
@@ -64,9 +64,9 @@ fun MainScreen() {
     Column {
         Row {
             Button(
-                onClick = { context.startActivity(Intent(context, MainActivity2::class.java)) }
+                onClick = { context.startActivity(Intent(context, CongratsActivity::class.java)) }
             ) {
-                Text(text = "Navigate to Library Flow")
+                Text(text = "Navigate to Congrats Library")
             }
         }
     }
