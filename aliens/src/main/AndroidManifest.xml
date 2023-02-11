@@ -4,9 +4,9 @@
     <application>
 
         <activity
-            android:name=".CongratsActivity"
+            android:name=".AliensActivity"
             android:exported="false"
-            android:label="@string/title_activity_congrats"
-            android:theme="@style/Theme.Congrats" />
+            android:label="@string/title_activity_aliens"
+            android:theme="@style/Theme.Aliens" />
     </application>
 </manifest>

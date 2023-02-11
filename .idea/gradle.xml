@@ -11,6 +11,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/aliengame" />
+            <option value="$PROJECT_DIR$/aliens" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ccap" />
             <option value="$PROJECT_DIR$/congrats" />

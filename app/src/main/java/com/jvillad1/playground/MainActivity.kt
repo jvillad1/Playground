@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import com.jvillad1.aliens.AliensActivity
 import com.jvillad1.congrats.CongratsActivity
 import com.jvillad1.congrats.events.PaymentEventHandler
 import com.jvillad1.congrats.events.PaymentResultEvent
@@ -67,6 +68,13 @@ fun MainScreen() {
                 onClick = { context.startActivity(Intent(context, CongratsActivity::class.java)) }
             ) {
                 Text(text = "Navigate to Congrats Library")
+            }
+        }
+        Row {
+            Button(
+                onClick = { context.startActivity(Intent(context, AliensActivity::class.java)) }
+            ) {
+                Text(text = "Navigate to Aliens Library")
             }
         }
     }
