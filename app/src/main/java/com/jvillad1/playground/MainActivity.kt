@@ -78,6 +78,11 @@ fun MainScreen() {
         ) {
             Text(text = "Navigate to Aliens Library")
         }
+        Button(
+            onClick = { context.startActivity(Intent(context, AliensActivity::class.java)) }
+        ) {
+            Text(text = "Navigate to Aliens Library")
+        }
     }
 }
 
