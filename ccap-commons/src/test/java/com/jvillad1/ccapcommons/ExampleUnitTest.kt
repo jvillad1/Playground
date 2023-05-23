@@ -1,4 +1,4 @@
-package com.jvillad1.ccap
+package com.jvillad1.ccapcommons
 
 import org.junit.Test
 

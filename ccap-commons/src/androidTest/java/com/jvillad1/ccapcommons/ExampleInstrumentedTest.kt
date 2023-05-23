@@ -1,4 +1,4 @@
-package com.jvillad1.ccap
+package com.jvillad1.ccapcommons
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
