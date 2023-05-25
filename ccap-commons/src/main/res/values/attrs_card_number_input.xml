@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="CardNumberInput">
+        <attr name="placeholderText" format="string" />
+    </declare-styleable>
+</resources>
