@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>
-
         <activity
-            android:name=".AliensActivity"
+            android:name=".NetworkingActivity"
             android:exported="false"
-            android:theme="@style/Theme.Aliens" />
+            android:theme="@style/Theme.Networking" />
     </application>
+
 </manifest>

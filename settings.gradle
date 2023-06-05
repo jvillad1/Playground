@@ -14,7 +14,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Playground"
 include ':app'
-include ':ccap-commons'
-include ':secure-inputs'
-include ':congrats'
 include ':aliens'
+include ':ccap-commons'
+include ':congrats'
+include ':networking'
+include ':secure-inputs'

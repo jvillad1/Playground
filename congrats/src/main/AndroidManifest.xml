@@ -6,7 +6,6 @@
         <activity
             android:name=".CongratsActivity"
             android:exported="false"
-            android:label="@string/title_activity_congrats"
             android:theme="@style/Theme.Congrats" />
     </application>
 </manifest>

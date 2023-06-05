@@ -23,6 +23,7 @@ import com.jvillad1.congrats.CongratsActivity
 import com.jvillad1.congrats.events.PaymentEventHandler
 import com.jvillad1.congrats.events.PaymentResultEvent
 import com.jvillad1.congrats.events.PerformPaymentEvent
+import com.jvillad1.networking.NetworkingActivity
 import com.jvillad1.playground.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -73,6 +74,11 @@ fun MainScreen() {
             onClick = { context.startActivity(Intent(context, CommonsActivity::class.java)) }
         ) {
             Text(text = "Navigate to Ccap Commons Library")
+        }
+        Button(
+            onClick = { context.startActivity(Intent(context, NetworkingActivity::class.java)) }
+        ) {
+            Text(text = "Navigate to Networking Library")
         }
         Button(
             onClick = { context.startActivity(Intent(context, CongratsActivity::class.java)) }

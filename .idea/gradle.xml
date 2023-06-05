@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ccap-commons" />
             <option value="$PROJECT_DIR$/congrats" />
+            <option value="$PROJECT_DIR$/networking" />
             <option value="$PROJECT_DIR$/secure-inputs" />
           </set>
         </option>
