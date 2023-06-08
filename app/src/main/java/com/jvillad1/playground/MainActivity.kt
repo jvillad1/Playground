@@ -24,7 +24,7 @@ import com.jvillad1.congrats.events.PaymentEventHandler
 import com.jvillad1.congrats.events.PaymentResultEvent
 import com.jvillad1.congrats.events.PerformPaymentEvent
 import com.jvillad1.networking.NetworkingActivity
-import com.jvillad1.playground.ui.theme.MyApplicationTheme
+import com.jvillad1.playground.ui.theme.PlaygroundTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MyApplicationTheme {
+            PlaygroundTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -96,7 +96,7 @@ fun MainScreen() {
 @Preview(showBackground = true)
 @Composable
 fun MainPreview() {
-    MyApplicationTheme {
+    PlaygroundTheme {
         MainScreen()
     }
 }
